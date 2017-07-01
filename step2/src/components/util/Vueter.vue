@@ -23,3 +23,13 @@
     }
   }
 </script>
+
+<style>
+  a{
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+  }
+</style>

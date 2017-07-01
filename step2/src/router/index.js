@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Twice from '@/components/twice/Twice'
+import NotFoundView from '@/components/util/NotFoundView'
 
 import TwiceMemberInfo from '@/components/twice/info/TwiceMemberInfo'
 import NaHun from '@/components/twice/info/NaHun'
@@ -43,6 +44,11 @@ export default new Router({
           }
         }
       ]
+    },
+    {
+      // not found handler
+      path: '*',
+      component: NotFoundView
     }
   ]
 })
