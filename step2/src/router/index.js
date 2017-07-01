@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Twice from '@/components/twice/Twice'
 
+import TwiceMemberInfo from '@/components/twice/info/TwiceMemberInfo'
 import NaHun from '@/components/twice/info/NaHun'
 import DaHun from '@/components/twice/info/DaHun'
 
@@ -31,6 +32,15 @@ export default new Router({
           path: 'da-hun',
           name: 'TwiceMember-DaHun',
           component: DaHun
+        },
+        {
+          path: 'member/:memberName',
+          name: 'TwiceMemberInfo',
+          component: TwiceMemberInfo,
+          afterEach: (to, from) => {
+            console.log(to)
+            console.log(from)
+          }
         }
       ]
     }

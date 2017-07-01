@@ -4,12 +4,19 @@
 <template>
   <div>
     <div>
-      <img src="../../assets/twice/twice-logo.jpg"/>
+      <img src="../../../static/twice/twice-logo.jpg"/>
 
       <ul>
         <li v-for="m in twice">
           <router-link :to="{path: '/twice/' + m}">{{m}}</router-link>
         </li>
+      </ul>
+
+      <ul>
+        <li v-for="m in twice">
+          <vueter :to= "'/twice/member/' + m" >{{m}}</vueter>
+        </li>
+
       </ul>
     </div>
 
@@ -18,8 +25,11 @@
 </template>
 
 <script>
+  import Vueter from '../util/Vueter'
+
   export default {
     name: 'Twice',
+    components: { Vueter },
     data () {
       return {
         twice: ['na-hun', 'da-hun']
