@@ -3,7 +3,7 @@
 -->
 <template>
   <div>
-    <img src="../assets/na-hun.jpg"/>
+    <img src="../../../assets/twice/na-hun.jpg"/>
   </div>
 </template>
 
