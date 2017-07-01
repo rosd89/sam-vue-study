@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+</head>
+<body>
+    <div id="app">
+        <span v-if="message.length > 0">{{ message }}</span>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script type="application/javascript">
+      new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue'
+        }
+      });
+    </script>
+</body>
+</html>

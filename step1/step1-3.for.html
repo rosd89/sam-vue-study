@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="member in members">{{ member.name }} - {{ member.age }}</li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script type="application/javascript">
+      new Vue({
+        el: '#app',
+        data: {
+          members: [
+            {
+              name: '철수',
+              age: 29
+            },
+            {
+              name: '영희',
+              age: 29
+            },
+            {
+              name: '바둑이',
+              age: 2
+            },
+          ]
+        }
+      });
+    </script>
+</body>
+</html>

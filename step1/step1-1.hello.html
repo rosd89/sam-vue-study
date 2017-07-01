@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Vue</title>
+</head>
+<body>
+    <div id="app">{{ message }}</div>
+
+    <div id="app2">
+        <span v-if="message.length > 0">{{message}}</span>
+    </div>
+
+    <div id="app3">
+        <ul>
+            <li v-for="member in members">
+                {{member.name}}-{{member.age}}
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script type="application/javascript">
+        new Vue({
+          el: '#app3',
+          data: {
+            members: [
+              {
+                name: '철수',
+                age: 12
+              },
+              {
+                name: '영희',
+                age: 12
+              },
+              {
+                name: '바둑이',
+                age: 4
+              }
+            ]
+          },
+          methods: {
+            getData() {
+
+            }
+          }
+        });
+
+      new Vue({
+        el: '#app',
+        props: [],
+        data: {
+          message: 'Hello Vue'
+        }
+      });
+
+      new Vue({
+        el: '#app2',
+        data: {
+          message: ''
+        }
+      })
+    </script>
+</body>
+</html>
