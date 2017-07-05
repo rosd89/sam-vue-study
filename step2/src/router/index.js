@@ -5,8 +5,9 @@ import Twice from '@/components/twice/Twice'
 import NotFoundView from '@/components/util/NotFoundView'
 
 import TwiceMemberInfo from '@/components/twice/info/TwiceMemberInfo'
-import NaHun from '@/components/twice/info/NaHun'
-import DaHun from '@/components/twice/info/DaHun'
+import TwiceMemberInfoWithoutEventBus from '@/components/twice/info/TwiceMemberInfoWithoutEventBus'
+import NaYeon from '@/components/twice/info/NaYeon'
+import DaHyun from '@/components/twice/info/DaHyun'
 
 Vue.use(Router)
 
@@ -15,8 +16,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'NaHun',
-      component: NaHun
+      name: 'NaYeon',
+      component: NaYeon
     },
     {
       path: '/twice',
@@ -25,23 +26,24 @@ export default new Router({
       description: 'TWICE 메인 컴포넌트',
       children: [
         {
-          path: 'na-hun',
-          name: 'TwiceMember-NaHun',
-          component: NaHun
+          path: 'na-yeon',
+          name: 'TwiceMember-NaYeon',
+          component: NaYeon
         },
         {
-          path: 'da-hun',
-          name: 'TwiceMember-DaHun',
-          component: DaHun
+          path: 'da-hyun',
+          name: 'TwiceMember-DaHyun',
+          component: DaHyun
         },
         {
           path: 'member/:memberName',
           name: 'TwiceMemberInfo',
-          component: TwiceMemberInfo,
-          afterEach: (to, from) => {
-            console.log(to)
-            console.log(from)
-          }
+          component: TwiceMemberInfo
+        },
+        {
+          path: 'member2/:memberName',
+          name: 'TwiceMemberInfo',
+          component: TwiceMemberInfoWithoutEventBus
         }
       ]
     },

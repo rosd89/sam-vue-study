@@ -3,12 +3,12 @@
 -->
 <template>
   <div>
-    <img src="/static/twice/na-hun.jpg"/>
+    <img src="/static/twice/na-yeon.jpg"/>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'NaHun'
+    name: 'NaYeon'
   }
 </script>

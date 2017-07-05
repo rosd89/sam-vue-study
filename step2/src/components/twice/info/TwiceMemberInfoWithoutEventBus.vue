@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: 'TwiceMemberInfo',
+    name: 'TwiceMemberInfoWithoutEventBus',
     computed: {
       memberName () { return this.$route.params.memberName }
     }

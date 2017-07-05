@@ -7,16 +7,24 @@
       <img src="../../../static/twice/twice-logo.jpg"/>
 
       <ul>
+        <h5>basic router</h5>
         <li v-for="m in twice">
           <router-link :to="{path: '/twice/' + m}">{{m}}</router-link>
         </li>
       </ul>
 
       <ul>
+        <h5>event bus</h5>
         <li v-for="m in twice">
           <vueter :to= "'/twice/member/' + m" >{{m}}</vueter>
         </li>
+      </ul>
 
+      <ul>
+        <h5>without evuet bus</h5>
+        <li v-for="m in twice">
+          <router-link :to= "'/twice/member2/' + m" >{{m}}</router-link>
+        </li>
       </ul>
     </div>
 
@@ -32,7 +40,7 @@
     components: { Vueter },
     data () {
       return {
-        twice: ['na-hun', 'da-hun']
+        twice: ['na-yeon', 'da-hyun']
       }
     }
   }
