@@ -1,4 +1,5 @@
-# sam-vue-study
+# sam-vue-study 
+* 기간: 17.06.25~ 17.08.13
 
 ### 개발환경
 * node LTS 버전 설치: https://nodejs.org/ko/
