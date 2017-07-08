@@ -6,10 +6,10 @@
     <nav class="navbar navbar-static-top nav-background-color">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">
+          <router-link :to="{path: '/'}" class="navbar-brand">
             <img class="logo-s" src="/static/img/logo-s.png"/>
             <b>Twice</b>
-          </a>
+          </router-link>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -22,11 +22,11 @@
             </li>
 
             <li>
-              <a href="#">Link</a>
+              <a href="#" class="nav-menu">Link</a>
             </li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
