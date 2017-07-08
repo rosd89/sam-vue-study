@@ -3,9 +3,7 @@
 -->
 <template>
   <div class="content-wrapper">
-    <div class="container">
       <slot></slot>
-    </div>
   </div>
 </template>
 
