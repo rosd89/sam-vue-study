@@ -9,10 +9,17 @@
       </section>
     </div>
 
-    <div class="row">
+    <div class="profile-menu">
       <div class="col-md-2">
-        <router-link v-for="n in members" v-if="currentViewCheck(n)" :key="n" :to="{path: '/profile/' + n}">
-          <img class="profile-card" :src="`http://twice.jype.com/images/profile/thumbs/${n}.jpg`" style="opacity: 1;"/>
+        <router-link
+          v-for="n in members"
+          v-if="currentViewCheck(n)"
+          :key="n"
+          :to="{path: '/profile/' + n}">
+          <img
+            class="profile-card"
+            :src="`http://twice.jype.com/images/profile/thumbs/${n}.jpg`"
+            style="opacity: 1;"/>
         </router-link>
       </div>
     </div>
@@ -41,9 +48,17 @@
 </script>
 
 <style>
+
+  .profile-menu {
+    opacity: 0.7;
+    position: absolute;
+    top: 7%;
+    width: 200px;
+  }
+
   .profile-card {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     float: left;
     border: 2px solid #fff;
     margin: 5px;

@@ -1,0 +1,84 @@
+{
+  "twice": [
+    {
+      "name": "NAYEON",
+      "birthDay": "1995.09.22",
+      "bloodType": "A",
+      "hobby": "드라마 영화 몰아보기",
+      "specialty": "안무 빨리 습득하기",
+      "favoriteMotto" : "감사하며 살자"
+    },
+    {
+      "name": "JEONGYEON",
+      "birthDay": "1996.11.01",
+      "bloodType": "O",
+      "hobby": "먹방, 동영상 보기",
+      "specialty": "핸드폰 게임",
+      "favoriteMotto" : "인생은 선택이다"
+    },
+    {
+      "name": "MOMO",
+      "birthDay": "1996.11.09",
+      "bloodType": "A",
+      "hobby": "먹기, 다이어트 할때는 음식사진보기",
+      "specialty": "`배`로만 웨이브하기",
+      "favoriteMotto" : "열심히 하면 맛있는 것을 먹을 수 있다"
+    },
+    {
+      "name": "SANA",
+      "birthDay": "1996.12.29",
+      "bloodType": "B",
+      "hobby": "바디미스트 & 향수 모으기, 쇼핑, 먹기",
+      "specialty": "서예",
+      "favoriteMotto" : "언제나 앞만 보고!!"
+    },
+    {
+      "name": "JIHYO",
+      "birthDay": "1997.02.01",
+      "bloodType": "O",
+      "hobby": "웹서핑, 산책",
+      "specialty": "트로트",
+      "favoriteMotto" : "긍정적인 마인드!"
+    },
+    {
+      "name": "MINA",
+      "birthDay": "199&.03.24",
+      "bloodType": "A",
+      "hobby": "인터넷에서 맛집 찾기 쇼핑",
+      "specialty": "발레",
+      "favoriteMotto" : "즐기며 살자!!"
+    },
+    {
+      "name": "NAYEON",
+      "birthDay": "1995.09.22",
+      "bloodType": "A",
+      "hobby": "드라마 영화 몰아보기",
+      "specialty": "안무 빨리 습득하기",
+      "favoriteMotto" : "감사하며 살자"
+    },
+    {
+      "name": "DAHYUN",
+      "birthDay": "1998.05.28",
+      "bloodType": "O",
+      "hobby": "음악감상 하는 것과 피아노치기",
+      "specialty": "춤, 렙",
+      "favoriteMotto" : "이것 또한 지나가리라(This too shall pass away!!)"
+    },
+    {
+      "name": "CHAEYOUNG",
+      "birthDay": "1999.04.23",
+      "bloodType": "B",
+      "hobby": "그림 그리기, 노래듣기",
+      "specialty": "그림 그리기, 달리기",
+      "favoriteMotto" : "즐기자!!"
+    },
+    {
+      "name": "TZUYU",
+      "birthDay": "1999.06.14",
+      "bloodType": "A",
+      "hobby": "공연보기 맛있는 것 먹기",
+      "specialty": "춤, 공 멀리 던지기",
+      "favoriteMotto" : "노력은 배신하지 않는다!\n좌절하지 않고 최선을 다하면 좋은\n결과를 얻을 수 있다."
+    }
+  ]
+}
