@@ -1,6 +1,7 @@
 {
   "twice": [
     {
+      "id": 1,
       "name": "NAYEON",
       "birthDay": "1995.09.22",
       "bloodType": "A",
@@ -9,6 +10,7 @@
       "favoriteMotto" : "감사하며 살자"
     },
     {
+      "id": 2,
       "name": "JEONGYEON",
       "birthDay": "1996.11.01",
       "bloodType": "O",
@@ -17,6 +19,7 @@
       "favoriteMotto" : "인생은 선택이다"
     },
     {
+      "id": 3,
       "name": "MOMO",
       "birthDay": "1996.11.09",
       "bloodType": "A",
@@ -25,6 +28,7 @@
       "favoriteMotto" : "열심히 하면 맛있는 것을 먹을 수 있다"
     },
     {
+      "id": 4,
       "name": "SANA",
       "birthDay": "1996.12.29",
       "bloodType": "B",
@@ -33,6 +37,7 @@
       "favoriteMotto" : "언제나 앞만 보고!!"
     },
     {
+      "id": 5,
       "name": "JIHYO",
       "birthDay": "1997.02.01",
       "bloodType": "O",
@@ -41,6 +46,7 @@
       "favoriteMotto" : "긍정적인 마인드!"
     },
     {
+      "id": 6,
       "name": "MINA",
       "birthDay": "199&.03.24",
       "bloodType": "A",
@@ -49,14 +55,7 @@
       "favoriteMotto" : "즐기며 살자!!"
     },
     {
-      "name": "NAYEON",
-      "birthDay": "1995.09.22",
-      "bloodType": "A",
-      "hobby": "드라마 영화 몰아보기",
-      "specialty": "안무 빨리 습득하기",
-      "favoriteMotto" : "감사하며 살자"
-    },
-    {
+      "id": 7,
       "name": "DAHYUN",
       "birthDay": "1998.05.28",
       "bloodType": "O",
@@ -65,6 +64,7 @@
       "favoriteMotto" : "이것 또한 지나가리라(This too shall pass away!!)"
     },
     {
+      "id": 8,
       "name": "CHAEYOUNG",
       "birthDay": "1999.04.23",
       "bloodType": "B",
@@ -73,6 +73,7 @@
       "favoriteMotto" : "즐기자!!"
     },
     {
+      "id": 9,
       "name": "TZUYU",
       "birthDay": "1999.06.14",
       "bloodType": "A",
