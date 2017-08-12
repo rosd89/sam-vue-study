@@ -9,11 +9,10 @@
       <label>{{text2}}</label>
     </div>
     <div>
-      <input type="checkbox" value="box1" v-model="checkedVal" @click="checkedToBox"> box1 &nbsp;
-      <input type="checkbox" value="box2" v-model="checkedVal" @click="checkedToBox"> box2 &nbsp;
-      <input type="checkbox" value="box3" v-model="checkedVal" @click="checkedToBox"> box3 &nbsp;
-      <input type="checkbox" value="box4" v-model="checkedVal" @click="checkedToBox"> box4 &nbsp;
-      <label>{{checkedRetVal}}</label>
+      <check-box-group
+        :values="values"
+        v-on:checkedToBox="checkedToBox">
+      </check-box-group>
     </div>
     <div>
       <input type="radio" value="apple" v-model="checkedVal2" @click="checkedToRadio"> apple &nbsp;
@@ -33,7 +32,9 @@
 </template>
 
 <script>
+  import CheckBoxGroup from './util/CheckBoxGroup'
   export default {
+    components: {CheckBoxGroup},
     name: 'FormMain',
     data () {
       return {
@@ -44,7 +45,13 @@
         checkedVal2: '',
         checkedRetVal2: '',
         sData: '',
-        result: ''
+        result: '',
+        values: [
+          {value: 'box1', name: 'Box1'},
+          {value: 'box2', name: 'Box2'},
+          {value: 'box3', name: 'Box3'},
+          {value: 'box4', name: 'Box4'}
+        ]
       }
     },
     methods: {
@@ -54,9 +61,9 @@
       clickclick2 () {
         this.text2 = this.text1.split('').reverse().join('')
       },
-      checkedToBox () {
-        console.log(this.checkedVal)
-        this.checkedRetVal = this.checkedVal.join('-')
+      checkedToBox (checkedVal) {
+        console.log(checkedVal)
+        console.log(checkedVal.join('-'))
       },
       checkedToRadio () {
         const val = this.checkedVal2
